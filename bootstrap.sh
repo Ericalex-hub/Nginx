@@ -7,3 +7,5 @@ sudo git clone https://github.com/cloudacademy/static-website-example
 sudo chown -R www-data:www-data /var/www/example.test/html
 sudo chmod -R 755 /var/www/example.test
 sudo nano /etc/nginx/sites-available/example.test
+sudo ln -s /etc/nginx/sites-available/example.test /etc/nginx/sites-enabled/
+sudo systemctl restart nginx
