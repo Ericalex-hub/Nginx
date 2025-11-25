@@ -31,7 +31,7 @@ Con el provisionado de Vagrant, todo lo de instalar Nginx, crear carpetas web y 
 
 ## 5. Ajuste del archivo hosts
 
-Para acceder por nombre (ej. galeria.local), edité el archivo `hosts` de mi máquina para apuntar el nombre al IP privado que le puse a la VM.
+Para acceder por nombre (ej. page.local), edité el archivo `hosts` de mi máquina para apuntar el nombre al IP privado que le puse a la VM.
 
 - Windows: `C:\Windows\System32\drivers\etc\hosts`
 - Linux/Mac: `/etc/hosts`
