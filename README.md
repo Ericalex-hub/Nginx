@@ -37,7 +37,3 @@ Para acceder por nombre (ej. page.local), edité el archivo `hosts` de mi máqui
 - Linux/Mac: `/etc/hosts`
 
 <img src="img/Hosts.png">
-
-# Práctica DAW: Despliegue de un Servidor Web con Vagrant y Nginx 2 (Atutenticación de Niginx)
-
-Monté una máquina virtual con Vagrant, instalé Nginx automáticamente y probé que sirviera una web estática accesible desde mi navegador a través de un dominio local.
