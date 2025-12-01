@@ -18,4 +18,4 @@ sudo sh -c "openssl passwd -apr1 'tu_contraseña' >> /etc/nginx/.htpasswd"
 sudo adduser eric
 sudo adduser aldana
 cat /etc/nginx/.htpasswd
-sudo nano /etc/nginx/sites-available/nombre_web
+sudo nano /etc/nginx/sites-available/example_web
