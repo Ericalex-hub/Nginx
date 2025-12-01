@@ -20,8 +20,16 @@ sudo adduser aldana
 cat /etc/nginx/.htpasswd
 sudo nano /etc/nginx/sites-available/example_web
 #----------AQUI EMPIEZA EL ACCESO SEGURO A NGINX----------
-sudo nano /etc/nginx/sites-available/example_web
+sudo nano /etc/nginx/sites-available/example.test
 sudo nginx -t
 sudo systemctl reload nginx
 sudo apt install ufw
 sudo ufw status
+sudo ufw allow ssh
+sudo ufw allow 'Nginx Full'
+sudo ufw delete allow 'Nginx HTTP'
+sudo ufw --force enable
+sudo ufw status
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/example.test.key -out /etc/ssl/certs/example.com.crt
+sudo nano /etc/nginx/sites-available/example.test
+sudo systemctl reload nginx
