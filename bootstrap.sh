@@ -23,3 +23,5 @@ sudo nano /etc/nginx/sites-available/example_web
 sudo nano /etc/nginx/sites-available/example_web
 sudo nginx -t
 sudo systemctl reload nginx
+sudo apt install ufw
+sudo ufw status
