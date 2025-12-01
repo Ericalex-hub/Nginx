@@ -19,3 +19,7 @@ sudo adduser eric
 sudo adduser aldana
 cat /etc/nginx/.htpasswd
 sudo nano /etc/nginx/sites-available/example_web
+#----------AQUI EMPIEZA EL ACCESO SEGURO A NGINX----------
+sudo nano /etc/nginx/sites-available/example_web
+sudo nginx -t
+sudo systemctl reload nginx
