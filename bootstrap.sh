@@ -10,5 +10,13 @@ sudo nano /etc/nginx/sites-available/example.test
 sudo ln -s /etc/nginx/sites-available/example.test /etc/nginx/sites-enabled/
 sudo systemctl restart nginx
 sudo nano /etc/nginx/sites-available/example.test
-#----------EMPIEZA LA SEGUNDA PARTE DE ESTA PRÁCTICA----------
+#----------AQUI EMPIEZA LA AUTENTICACIÓN DE NGINX----------
 dpkg -l | grep openssl
+sudo sh -c "echo -n 'vuestro_nombre:' >> /etc/nginx/.htpasswd"
+sudo sh -c "openssl passwd -apr1 >> /etc/nginx/.htpasswd"
+sudo sh -c "openssl passwd -apr1 'tu_contraseña' >> /etc/nginx/.htpasswd"
+sudo adduser eric
+sudo adduser aldana
+cat /etc/nginx/.htpasswd
+sudo nano /etc/nginx/sites-available/nombre_web
+>>>>>>> fb1c7e440e80010d17c8f46e82a90d701e283cfc
