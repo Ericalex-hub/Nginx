@@ -19,4 +19,3 @@ sudo adduser eric
 sudo adduser aldana
 cat /etc/nginx/.htpasswd
 sudo nano /etc/nginx/sites-available/nombre_web
->>>>>>> fb1c7e440e80010d17c8f46e82a90d701e283cfc
